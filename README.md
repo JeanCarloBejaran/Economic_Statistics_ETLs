@@ -37,6 +37,7 @@ A developer would:
   - Update the transform instance used in this suite of electricity datasets to include support for the special character if it is found.
   - Once updated, the 25 dataset's ETLs are fixed and every other dataset importing that method is now immune to that bug. All from the change of one specific function at one specific module. 
   
+  **Edit this out** 
   Using this standardized approach, a new developer can easily locate the transform routines in the ETL modules, because it is consistent across agency folders across the repo, 
     Only has to learn things once because the layout and development process is the same across agency folders.
     Propagates this function across datasets to future-proof the other 50 datasets in this suite to automatically adjust the ETL if the new conditions are met. 
