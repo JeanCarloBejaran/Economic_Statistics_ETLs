@@ -35,7 +35,7 @@ Each developer thinks and codes differently.
 
 The OOP module approach guarantees solving the problem once whereas a more liberal functional coding approach could result in resolving the same issue across 25 different ETL routines. 
 
-###Scenario #2 Writing a new ETL.
+### Scenario #2 Writing a new ETL.
 
 The Energy Information Agency publishes a new dataset that adds carbon emissions per kWh information and we want to add that dataset. 
 
