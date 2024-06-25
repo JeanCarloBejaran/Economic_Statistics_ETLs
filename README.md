@@ -1,7 +1,7 @@
-#Economic_Statistics_ETL
+# Economic_Statistics_ETL
   Example development template for Standardized Development operations.
 
-##Objective
+## Objective
   
   This approach solves the common problems of managing an ETL data engineering system that: 
   - Accommodates multiple developers collaborating on the system.
@@ -18,13 +18,13 @@
   - Normalize code into reusable modules that are easily strung together to rapidly write and deploy new ETLs. 
 
 
-##Example Applications: 
+## Example Applications: 
 
-###Scenario #1: Fix a bug for 25 datasets
+### Scenario #1: Fix a bug for 25 datasets
 
 The Department of Revenue adds support for a special character in their Electricity Prices dataset that breaks the current logic of our ETL for 25 datasets. The original developers for these ETLs are no longer with the team.
 
-####Following this solution:
+#### Following this solution:
 Using this standardized approach, a new developer can easily locate the transform routines in the ETL modules, because it is consistent across agency folders across the repo, 
 Only has to learn things once because the layout and development process is the same across agency folders.
 
