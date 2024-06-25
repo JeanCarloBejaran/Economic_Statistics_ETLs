@@ -1,5 +1,5 @@
 # Economic_Statistics_ETL
-  Example of normalized ETL development operations.
+  A template for scalable ETL maintenance and development operations.
 
 
 ## Objective
