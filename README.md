@@ -5,25 +5,37 @@
   
   The approach solves common challenges faced when collaborating on managing a scalable ETL system:
 
+  - Organizes the code to reduce redundancy and improve its integrity.
   - Reduce codebase complexity.
-  - Efficient debugging through concise, standardized error messages.
-  - Coordinates multiple developers collaborating on the system.
-  - Lowers the learning curve for new developers to contribute. 
-  - Significant increases in the impact of a developer hour in maintaining, improving, and growing an ETL system.
-  - Easily deploy new ETLs by stringing together previously used logic through an extract, transform, or load template similar across a family of datasets. 
-  - Easily understandable modules that separate the details of the code from the routine logic of the extract, transform, and load logic leading to simpler code reading.
+  - Transparency through specific error messages.
+  - Low onboarding learning curve.
+  - Coordinates multiple developers' efforts.
+  - The codebase solves a type of problem once.
+  - Simple, optimized for debugging modules of specific functionality at each level of processing.
+  - Increases the impact of a developer hour in maintaining, scaling and improving an ETL system.  
+  - Expedites ETL development and deployment by leveraging templates of previous datasets.
 
 
 ## Example Applications: 
 
-    Scenario #1: Fix a bug for 25 datasets
+    Scenario #1: 25 bug tickets vs one bug that fixes 25 datasets
 
-The Department of Revenue adds support for a special character in their Electricity Prices dataset that breaks the current logic of our ETL for 25 datasets. The original developers for these ETLs are no longer with the team.
+### Simulated context: 
 
-  ####  Before the standard:
-  A developer would have to read the code to learn how the original developer laid out and solved the problem. The current developer must guess explore and find where the original developer might have written the code that enabled the bug.
+One of the agencies we follow, The Department of Revenue, adds support for a special character in their Electricity datasets suite that result in errors for 25 ETLs. This data that feeds critical company assets and it is paramount that down time is minimized. The original developers of these ETLs are no longer with the team.
+
+  #### Without the standard:
+  A developer would:
+    - Guess exploring and find where the original developer might have written the code that now enables the bug.
+    - Read each module's code to learn and modify for that instance of the problem.
+    - Repeat this process for each dataset.  
   
   #### Following the standard:
+A developer would:
+  - Access the level where special characters are processed for our codebase.
+  - Update the transform instance used in this suite of electricity datasets to include support for the special character if it is found.
+  - Once updated, the 25 dataset's ETLs are fixed and every other dataset importing that method is now immune to that bug. All from the change of one specific function at one specific module. 
+  
   Using this standardized approach, a new developer can easily locate the transform routines in the ETL modules, because it is consistent across agency folders across the repo, 
     Only has to learn things once because the layout and development process is the same across agency folders.
     Propagates this function across datasets to future-proof the other 50 datasets in this suite to automatically adjust the ETL if the new conditions are met. 
@@ -47,10 +59,11 @@ The Energy Information Agency publishes a new dataset that adds carbon emissions
 #### Following the Standard
 The developer:
   1. Imports the high-level dataset extract template used for a similar dataset and replaces the variables for the new dataset.
-  2. Imports the high-level template used for the transform routine of a similar dataset and imports the kWh to Mwh function that has only been needed on one other dataset to meet our kWh data publishing standard.
+  2. Imports the high-level template used for the transform routine of a similar dataset and imports the kWh to Mwh function that has only been needed on one other dataset to meet our "only in kWh" data publishing standard.
 
 #### Conclusion:
-  The new code written for adding a new dataset will only 
+  - The new code written for adding a new dataset is optimized to be the minumum.
+  - New functionality is written with reusability as a design paradigm. 
 
 ## Technologies Used:
 
