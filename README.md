@@ -1,5 +1,6 @@
 # Economic_Statistics_ETL
-  Example development template for Standardized Development operations.
+  Example of normalized ETL development operations.
+
 
 ## Objective
   
