@@ -178,9 +178,9 @@ class RevenueDataset:
   
   def export(self):
     
-    self.dataset.to_csv(os.path.join(self.output_path,f"{self.dataset_name} ready for CIM.csv"), index = False)
+    self.dataset.to_csv(os.path.join(self.output_path,f"{self.dataset_name} ready for load.csv"), index = False)
     
-    print(f"Transform Success, {self.dataset_name} ready for CIM.csv exported to {self.output_path}")
+    print(f"Transform Success, {self.dataset_name} ready for load.csv exported to {self.output_path}")
 
 
   #Tests
