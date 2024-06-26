@@ -1,5 +1,5 @@
 # Economic_Statistics_ETL
-  Example of normalized ETL development operations.
+  A template for scalable ETL maintenance and development operations.
 
 
 ## Objective
@@ -25,13 +25,13 @@
 
 One of the agencies we follow, The Department of Revenue, adds support for a special character in their Electricity datasets suite that result in errors for 25 ETLs. This data that feeds critical company assets and it is paramount that down time is minimized. The original developers of these ETLs are no longer with the team.
 
-  #### Without the standard:
+  #### Without the standard
   A developer would:
     - Guess exploring and find where the original developer might have written the code that now enables the bug.
     - Read each module's code to learn and modify for that instance of the problem.
     - Repeat this process for each dataset.  
   
-  #### Following the standard:
+  #### With the standard
 A developer would:
   - Access the level where special characters are processed for our codebase.
   - Update the transform instance used in this suite of electricity datasets to include support for the special character if it is found.
@@ -43,7 +43,7 @@ A developer would:
     Propagates this function across datasets to future-proof the other 50 datasets in this suite to automatically adjust the ETL if the new conditions are met. 
 
 
-#### Conclusion:
+#### Conclusion
 
 Each developer thinks and codes differently.
 The OOP module approach guarantees solving the problem once whereas a more liberal functional coding approach could result in resolving the same issue across 25 different ETL routines. 
@@ -51,19 +51,21 @@ The OOP module approach guarantees solving the problem once whereas a more liber
 
     Scenario #2 Adding a new ETL.
 
+### Simulated context: 
+
 The Energy Information Agency publishes a new dataset that adds carbon emissions per kWh information and we want to add that dataset. 
 
-#### Not following the standard
+#### Without the standard
  The developer:
   1. Implements and adds his way of extracting data from google sheet files.
   2. Implements her conversion function in the dataset's transform module. 
 
-#### Following the Standard
+#### With the standard
 The developer:
   1. Imports the high-level dataset extract template used for a similar dataset and replaces the variables for the new dataset.
   2. Imports the high-level template used for the transform routine of a similar dataset and imports the kWh to Mwh function that has only been needed on one other dataset to meet our "only in kWh" data publishing standard.
 
-#### Conclusion:
+#### Conclusion
   - The new code written for adding a new dataset is optimized to be the minumum.
   - New functionality is written with reusability as a design paradigm. 
 
