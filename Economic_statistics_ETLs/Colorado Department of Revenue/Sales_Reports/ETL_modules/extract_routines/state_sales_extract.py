@@ -12,6 +12,8 @@ export_path = os.path.join(ETL_home, 'Colorado Department of Revenue', 'Agency_M
 id_sheetname_dict = {'1tI6ewOiPTLHWUDtdbH14Hg4NVrVI1nHx':'State'} #sheetsid / sheetname pair
 
 #initiate instance
-Report =  Extract_Tools.ExtractGsheets(dataset_name, id_sheetname_dict, export_path)
+Report =  Extract_Tools.ExtractGsheets(dataset_name, 
+                                       id_sheetname_dict, 
+                                       export_path)
 
 Report.extract_data()
