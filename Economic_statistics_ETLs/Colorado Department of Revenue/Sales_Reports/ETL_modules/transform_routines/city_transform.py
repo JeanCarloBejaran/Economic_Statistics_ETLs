@@ -20,7 +20,12 @@ column_names = ['Month', 'Year', 'City', 'Number of Retailers', 'Number of Retur
 expected_column_names = [['Month', 'Year', 'City', 'Number of Retailers ¹', 'Number of Returns ²', 'Gross Sales', 'Retail Sales', 'State Net Taxable Sales', 'State Sales Tax'] , ['Month', 'Year', 'City', 'Number of Retailers ²', 'Number of Returns ³', 'Gross Sales', 'Retail Sales', 'State Net Taxable Sales']]
 
 #initializing instance
-Report = RevenueDataset.RevenueDataset(dataset_name, source_files, source_path, output_path, column_names, expected_column_names) #initializing instance
+Report = RevenueDataset.RevenueDataset(dataset_name, 
+                                       source_files, 
+                                       source_path, 
+                                       output_path, 
+                                       column_names, 
+                                       expected_column_names) #initializing instance
 
 Report.test_extracted_data(column_names = True)
 

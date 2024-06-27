@@ -22,7 +22,13 @@ column_names = ['Month', 'Year', 'NAICS', 'Industry', 'Adams', 'Arapahoe', 'Boul
 expected_column_names = [['Month','Year','NAICS Code ¹','Industry ¹','Adams','Arapahoe','Boulder','Denver','Douglas','El Paso','Jefferson',	'Larimer','Mesa', 'Pueblo','Weld'], ['Month','Year','2022 NAICS Code ¹','Industry ¹','Adams','Arapahoe','Boulder','Denver','Douglas','El Paso','Jefferson','Larimer','Mesa','Pueblo','Weld']] #For CIM Column Names
 
 #initializing instance
-Report = RevenueDataset.RevenueDataset(dataset_name, source_files, source_path, output_path, column_names, expected_column_names, ignore_columns) 
+Report = RevenueDataset.RevenueDataset(dataset_name, 
+                                       source_files, 
+                                       source_path, 
+                                       output_path, 
+                                       column_names, 
+                                       expected_column_names, 
+                                       ignore_columns) 
 
 Report.test_extracted_data(column_names = True)
 

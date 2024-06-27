@@ -21,7 +21,13 @@ expected_column_names = [['Month','Year', 'NAICS Code ¹', 'Industry ¹',	'Arvad
 ignore_columns = ['Sequence Number ¹'] 
 
 #initializing instance
-Report = RevenueDataset.RevenueDataset(dataset_name, source_files, source_path, output_path, column_names, expected_column_names, ignore_columns) #initializing instance
+Report = RevenueDataset.RevenueDataset(dataset_name, 
+                                       source_files, 
+                                       source_path, 
+                                       output_path, 
+                                       column_names, 
+                                       expected_column_names, 
+                                       ignore_columns) #initializing instance
 
 Report.test_extracted_data(column_names = True)
 
