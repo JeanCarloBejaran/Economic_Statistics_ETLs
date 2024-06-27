@@ -66,7 +66,7 @@ class RevenueDataset:
         break
     return footer_rows
 
-  def find_money_columns(self, df): #todo-tweak.
+  def find_money_columns(self, df): 
     '''Finds the columns with money values. Returns a list of column names to feed the usecols option on pandas.read_csv().
         Method: Iterates through the first row of the dataframe. If the cell value has a $ sign, it's a money column.'''
     
