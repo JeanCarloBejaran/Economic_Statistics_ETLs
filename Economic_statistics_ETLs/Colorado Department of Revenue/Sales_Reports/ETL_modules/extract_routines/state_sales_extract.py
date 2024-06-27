@@ -7,7 +7,7 @@ import Extract_Tools
 #Instance initialization variables
 dataset_name = 'State Sales Tax Return History in Colorado'
 
-export_path = os.path.join(ETL_home, 'Colorado Department of Revenue', 'Agency_Specific_Modules', 'data_raw')
+export_path = os.path.join(ETL_home, 'Colorado Department of Revenue', 'Agency_Modules', 'data_raw')
 
 id_sheetname_dict = {'1tI6ewOiPTLHWUDtdbH14Hg4NVrVI1nHx':'State'} #sheetsid / sheetname pair
 

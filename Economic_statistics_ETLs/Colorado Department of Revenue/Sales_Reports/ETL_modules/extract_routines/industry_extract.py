@@ -7,7 +7,7 @@ import Extract_Tools
 #Instance initialization variables
 dataset_name = 'Sales Reports by Industry in Colorado'
 
-export_path = os.path.join(ETL_home, 'Colorado Department of Revenue', 'Agency_Specific_Modules', 'data_raw')
+export_path = os.path.join(ETL_home, 'Colorado Department of Revenue', 'Agency_Modules', 'data_raw')
 
 id_sheetname_dict = {'1WANzZQFE57J73daXvo1xu4mITy-1DmuP':'2016 -2020 Report', #sheetsid / sheetname pair
                             '1cmTJ4ZRAjBFfevT0hyCatUXDIzIG393I':'Industry'} 
