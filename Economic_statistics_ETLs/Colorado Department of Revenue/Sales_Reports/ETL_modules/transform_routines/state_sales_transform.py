@@ -16,6 +16,7 @@ source_files = ['State Sales Tax Return History in Colorado State.csv']
 
 #Target column names
 column_names = ['Month', 'Year', 'Number of Retailers ¹', 'Number of Returns ²', 'Gross Sales',	'Retail Sales',	'State Taxable Sales',	'State Sales Tax ³'] 
+
 expected_column_names = [['Month','Year','Number of Retailers ¹','Number of Returns ²','Gross Sales','Retail Sales', 'State Taxable Sales',	'State Sales Tax ³']] #As on extracted file
 
 #initializing instance

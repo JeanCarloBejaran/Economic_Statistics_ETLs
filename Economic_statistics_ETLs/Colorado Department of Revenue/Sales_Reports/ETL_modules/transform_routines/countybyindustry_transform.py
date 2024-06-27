@@ -18,6 +18,7 @@ ignore_columns = ['Sequence Number ¹']
 
 #Target column names
 column_names = ['Month', 'Year', 'NAICS', 'Industry', 'Adams', 'Arapahoe', 'Boulder', 'Denver', 'Douglas', 'El Paso', 'Jefferson', 'Larimer', 'Mesa', 'Pueblo', 'Weld']
+
 expected_column_names = [['Month','Year','NAICS Code ¹','Industry ¹','Adams','Arapahoe','Boulder','Denver','Douglas','El Paso','Jefferson',	'Larimer','Mesa', 'Pueblo','Weld'], ['Month','Year','2022 NAICS Code ¹','Industry ¹','Adams','Arapahoe','Boulder','Denver','Douglas','El Paso','Jefferson','Larimer','Mesa','Pueblo','Weld']] #For CIM Column Names
 
 #initializing instance

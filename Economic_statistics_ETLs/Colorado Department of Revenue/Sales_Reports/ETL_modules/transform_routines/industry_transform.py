@@ -18,6 +18,7 @@ ignore_columns = ['Sequence Number ¹']
 
 #Target column names
 column_names = ['Month', 'Year', 'NAICS', 'Industry', 'Number of Retailers', 'Number of Returns', 'Gross Sales', 'Retail Sales', 'State Net Taxable Sales', 'State Sales Tax']
+
 expected_column_names = [['Month','Year','NAICS Code ¹','Industry ¹','Number of Retailers ²','Number of Returns ³','Gross Sales','Retail Sales', 'State Net Taxable Sales',	'State Sales Tax'], ['Month','Year','2022 NAICS Code ¹','Industry ¹','Number of Retailers ²','Number of Returns ³','Gross Sales','Retail Sales', 'State Net Taxable Sales']] #For CIM Column Names
 
 #initializing instance
