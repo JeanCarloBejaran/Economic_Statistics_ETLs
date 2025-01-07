@@ -9,9 +9,6 @@ Welcome to the **Economic Data Analysis** repository! This collection of Jupyter
 - [📈 Personal Consumption Expenditures](#personal-consumption-expenditures)
 - [📉 GDP by Metropolitan and State Area](#gdp-by-metropolitan-and-state-area)
 - [🛠️ Technologies Used](#technologies-used)
-- [📚 Getting Started](#getting-started)
-- [🤝 Contributing](#contributing)
-- [📄 License](#license)
 
 ---
 
