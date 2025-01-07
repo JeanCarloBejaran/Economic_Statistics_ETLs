@@ -1,4 +1,4 @@
-Each folder in this directory includes the ETLs for a dataset families. 
+Each folder in this directory includes the ETLs for a dataset family. 
 
 Example:
 1. Sales Reports

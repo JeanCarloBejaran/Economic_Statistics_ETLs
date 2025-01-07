@@ -66,7 +66,7 @@ The developer:
   2. Imports the high-level template used for the transform routine of a similar dataset and imports the kWh to Mwh function that has only been needed on one other dataset to meet our "only in kWh" data publishing standard.
 
 #### Conclusion
-  - The new code written for adding a new dataset is optimized to be the minumum.
+  - The new code written for adding a new dataset is optimized to be the minimum.
   - New functionality is written with reusability as a design paradigm. 
 
 ## Technologies Used:
