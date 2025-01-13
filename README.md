@@ -23,51 +23,47 @@
 
 ### Simulated context: 
 
-One of the agencies we follow, The Department of Revenue, adds support for a special character in their Electricity datasets suite that result in errors for 25 ETLs. This data that feeds critical company assets and it is paramount that down time is minimized. The original developers of these ETLs are no longer with the team.
+One of the agencies we follow, The Department of Revenue, adds support for a special character in their Electricity datasets suite that result in errors for 25 ETLs. This data feeds critical down-stream assets and it is paramount that downtime is minimized. The original developers of these ETLs are no longer with the team.
 
   #### Without the standard
   A developer would:
-    - Guess exploring and find where the original developer might have written the code that now enables the bug.
-    - Read each module's code to learn and modify for that instance of the problem.
+    - Guess by exploring to find where the original developer might have written the logic causing the bug.
+    - Read each module's code and familiarize with the author's coding style to fix for one dataset.
     - Repeat this process for each dataset.  
   
-  #### With the standard
+  #### With the new standard
 A developer would:
-  - Access the level where special characters are processed for our codebase.
-  - Update the transform instance used in this suite of electricity datasets to include support for the special character if it is found.
-  - Once updated, the 25 dataset's ETLs are fixed and every other dataset importing that method is now immune to that bug. All from the change of one specific function at one specific module. 
-  
-  **Edit this out** 
-  Using this standardized approach, a new developer can easily locate the transform routines in the ETL modules, because it is consistent across agency folders across the repo, 
-    Only has to learn things once because the layout and development process is the same across agency folders.
-    Propagates this function across datasets to future-proof the other 50 datasets in this suite to automatically adjust the ETL if the new conditions are met. 
+  - Follow the standard error message to access directly the level where special characters are processed on our codebase.
+  - Update the transform module used for this suite of datasets to include support for the special character if it is found.
+  - Once updated, the 25 dataset's ETLs are fixed and every other dataset importing that method is now immune to that bug. All from the change of one specific function on one specific module. 
 
 
 #### Conclusion
 
 Each developer thinks and codes differently.
-The OOP module approach guarantees solving the problem once whereas a more liberal functional coding approach could result in resolving the same issue across 25 different ETL routines. 
+The OOP module approach guarantees solving the problem once whereas a more liberal functional coding approach results in having to resolve the same issue across 25 different ETL routines according to how the original developer organized his code. 
 
 
     Scenario #2 Adding a new ETL.
 
 ### Simulated context: 
 
-The Energy Information Agency publishes a new dataset that adds carbon emissions per kWh information and we want to add that dataset. 
+The Energy Information Agency publishes a new dataset that adds carbon emissions per kWh information and we want to add that data.
 
 #### Without the standard
  The developer:
-  1. Implements and adds his way of extracting data from google sheet files.
+  1. Implements and adds her personal way of extracting data from google Sheets files.
   2. Implements her conversion function in the dataset's transform module. 
 
 #### With the standard
 The developer:
-  1. Imports the high-level dataset extract template used for a similar dataset and replaces the variables for the new dataset.
-  2. Imports the high-level template used for the transform routine of a similar dataset and imports the kWh to Mwh function that has only been needed on one other dataset to meet our "only in kWh" data publishing standard.
+  1. Imports the high-level dataset extract module used for a similar dataset and only reconfigures the required variables for the new dataset.
+  2. Imports the high-level template module used for the transform routine of a similar dataset and imports the kWh to mWh function that has only been needed for one other dataset to meet our "only in kWh" data publishing requirement.
 
 #### Conclusion
-  - The new code written for adding a new dataset is optimized to be the minimum.
-  - New functionality is written with reusability as a design paradigm. 
+  - With the standard, the developer didn't write new logic but imported previously proven standard logic and adapted it to cover a new application.
+  - By design, the amount of code that has to be written to make a change or add a new dataset is optimized to be the minimum.
+  - Any new functionality is written with future reusability as a design paradigm. 
 
 ## Technologies Used:
 
