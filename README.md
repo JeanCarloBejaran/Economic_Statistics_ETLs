@@ -1,72 +1,63 @@
-# Economic_Statistics_ETL
-  A template for scalable ETL maintenance and development operations.
+## Economic Statistics ETL 📊
 
+### Objective 🎯
 
-## Objective
-  
-  The approach solves common challenges faced when collaborating on managing a scalable ETL system:
+This project tackles common challenges in managing a scalable ETL system:
 
-  - Organizes the code to reduce redundancy and improve its integrity.
-  - Reduce codebase complexity.
-  - Transparency through specific error messages.
-  - Low onboarding learning curve.
-  - Coordinates multiple developers' efforts.
-  - The codebase solves a type of problem once.
-  - Simple, optimized for debugging modules of specific functionality at each level of processing.
-  - Increases the impact of a developer hour in maintaining, scaling and improving an ETL system.  
-  - Expedites ETL development and deployment by leveraging templates of previous datasets.
+- ✅ **Organized Code**: Reduces redundancy and improves integrity.
+- ⬆️ **Simplified Complexity**: Makes the codebase easier to navigate.
+- 🔒 **Transparent Debugging**: Specific error messages for quicker fixes.
+- 📚 **Low Learning Curve**: Onboards new developers seamlessly.
+- 📚 **Collaboration Ready**: Streamlines team contributions.
+- ♻️ **One Problem, One Solution**: Solves issues universally, not redundantly.
+- 🔧 **Optimized Debugging**: Ensures modular debugging at each level.
+- ⏳ **Increased Efficiency**: Amplifies developer impact.
+- 🔄 **Reusable Templates**: Leverages previous work for expedited development.
 
+### Example Applications 📊
 
-## Example Applications: 
+#### Scenario #1: 25 Bug Tickets vs. One Bug Fix for 25 Datasets 
 
-    Scenario #1: 25 bug tickets vs one bug that fixes 25 datasets
+**Simulated Context:**
 
-### Simulated context: 
+The Department of Revenue introduces a special character in their Electricity datasets, breaking 25 ETLs. These datasets feed critical downstream assets, requiring urgent fixes. The original developers are unavailable.
 
-One of the agencies we follow, The Department of Revenue, adds support for a special character in their Electricity datasets suite that result in errors for 25 ETLs. This data feeds critical down-stream assets and it is paramount that downtime is minimized. The original developers of these ETLs are no longer with the team.
+**Without the Standard:**
+- ❓ Guesswork to locate the issue in the original developer's code.
+- 🧐 Manual review of coding styles for each dataset.
+- ♻️ Repeat the process 25 times for each dataset.
 
-  #### Without the standard
-  A developer would:
-    - Guess by exploring to find where the original developer might have written the logic causing the bug.
-    - Read each module's code and familiarize with the author's coding style to fix for one dataset.
-    - Repeat this process for each dataset.  
-  
-  #### With the new standard
-A developer would:
-  - Follow the standard error message to access directly the level where special characters are processed on our codebase.
-  - Update the transform module used for this suite of datasets to include support for the special character if it is found.
-  - Once updated, the 25 dataset's ETLs are fixed and every other dataset importing that method is now immune to that bug. All from the change of one specific function on one specific module. 
+**With the Standard:**
+- 🔗 Follow the error message to the exact processing level.
+- ⚒️ Update the transform module for the dataset suite.
+- 💡 Fix all 25 datasets and future-proof the system with one change.
 
+**Conclusion:**
 
-#### Conclusion
+The OOP module approach ensures a single solution for universal problems, contrasting with ad-hoc fixes that require repeated effort across multiple ETLs.
 
-Each developer thinks and codes differently.
-The OOP module approach guarantees solving the problem once whereas a more liberal functional coding approach results in having to resolve the same issue across 25 different ETL routines according to how the original developer organized his code. 
+---
 
+#### Scenario #2: Adding a New ETL 🔄
 
-    Scenario #2 Adding a new ETL.
+**Simulated Context:**
 
-### Simulated context: 
+A new dataset from the Energy Information Agency includes carbon emissions per kWh data. You need to integrate it.
 
-The Energy Information Agency publishes a new dataset that adds carbon emissions per kWh information and we want to add that data.
+**Without the Standard:**
+1. Develop custom extraction logic for Google Sheets.
+2. Implement a conversion function in the transform module.
 
-#### Without the standard
- The developer:
-  1. Implements and adds her personal way of extracting data from google Sheets files.
-  2. Implements her conversion function in the dataset's transform module. 
+**With the Standard:**
+1. Import a high-level dataset extract module and reconfigure variables.
+2. Use a template transform module and a reusable kWh to mWh function.
 
-#### With the standard
-The developer:
-  1. Imports the high-level dataset extract module used for a similar dataset and only reconfigures the required variables for the new dataset.
-  2. Imports the high-level template module used for the transform routine of a similar dataset and imports the kWh to mWh function that has only been needed for one other dataset to meet our "only in kWh" data publishing requirement.
+**Conclusion:**
+- ✨ Minimal new code required.
+- ♻️ Future-proof functionality by design.
 
-#### Conclusion
-  - With the standard, the developer didn't write new logic but imported previously proven standard logic and adapted it to cover a new application.
-  - By design, the amount of code that has to be written to make a change or add a new dataset is optimized to be the minimum.
-  - Any new functionality is written with future reusability as a design paradigm. 
+### Technologies Used 🚀
 
-## Technologies Used:
-
-- Python3
-- Pandas
-- Object Oriented Programming
+- 🐍 Python 3
+- 📊 Pandas
+- 🔧 Object-Oriented Programming
