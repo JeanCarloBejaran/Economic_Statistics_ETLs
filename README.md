@@ -1,6 +1,6 @@
-## Economic Statistics ETL 📊
+# Economic Statistics ETL 📊
 
-### Objective 🎯
+## Objective 🎯
 
 This project tackles common challenges in managing a scalable ETL system:
 
@@ -14,9 +14,9 @@ This project tackles common challenges in managing a scalable ETL system:
 - ⏳ **Increased Efficiency**: Amplifies developer impact.
 - 🔄 **Reusable Templates**: Leverages previous work for expedited development.
 
-### Example Applications 📊
+## Example Applications 📊
 
-#### Scenario #1: 25 Bug Tickets vs. One Bug Fix for 25 Datasets 
+### Scenario #1: 25 Bug Tickets vs. One Bug Fix for 25 Datasets 
 
 **Simulated Context:**
 
@@ -38,7 +38,7 @@ The OOP module approach ensures a single solution for universal problems, contra
 
 ---
 
-#### Scenario #2: Adding a New ETL 🔄
+### Scenario #2: Adding a New ETL 🔄
 
 **Simulated Context:**
 
@@ -56,7 +56,7 @@ A new dataset from the Energy Information Agency includes carbon emissions per k
 - ✨ Minimal new code required.
 - ♻️ Future-proof functionality by design.
 
-### Technologies Used 🚀
+## Technologies Used 🚀
 
 - 🐍 Python 3
 - 📊 Pandas
