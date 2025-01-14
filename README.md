@@ -14,6 +14,21 @@ This project tackles common challenges in managing a scalable ETL system:
 - ⏳ **Increased Efficiency**: Amplifies developer impact.
 - 🔄 **Reusable Templates**: Leverages previous work for expedited development.
 
+### 🔗 Quick Links to the Code
+
+Here are the key links to the relevant modules and routines for this project:
+
+- **Extract Module**:  
+  📂 [Extract Tools](https://github.com/JeanCarloBejaran/Economic_Statistics_ETLs/tree/main/Extract_Tools)
+
+- **Transforms Module**:  
+  📂 [Colorado Department of Revenue Agency Modules](https://github.com/JeanCarloBejaran/Economic_Statistics_ETLs/tree/main/Economic_statistics_ETLs/Colorado%20Department%20of%20Revenue/Agency_Modules)
+
+- **Extract and Transform Routines**:  
+  📂 [Sales Reports ETL Modules](https://github.com/JeanCarloBejaran/Economic_Statistics_ETLs/tree/main/Economic_statistics_ETLs/Colorado%20Department%20of%20Revenue/Sales_Reports/ETL_modules)
+
+---
+
 ## Example Applications 📊
 
 ### Scenario #1: 25 Bug Tickets vs. One Bug Fix for 25 Datasets 
@@ -35,8 +50,6 @@ The Department of Revenue introduces a special character in their Electricity da
 **Conclusion:**
 
 The OOP module approach ensures a single solution for universal problems, contrasting with ad-hoc fixes that require repeated effort across multiple ETLs.
-
----
 
 ### Scenario #2: Adding a New ETL 🔄
 
