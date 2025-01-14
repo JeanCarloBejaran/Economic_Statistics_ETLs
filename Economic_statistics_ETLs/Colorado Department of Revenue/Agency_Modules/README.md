@@ -1,10 +1,8 @@
-This directory holds agency specific modules for extracting the logic required for executing consistently required routines. 
+This directory holds an agency-specific module (RevenueDataset.py) imported for data transform routines. 
 
-- It includes a RevenueDataset class module. Each Revenue dataset is instantiated from a class template design to accomodate similarities for the efficient processing of datasets from this family. 
+It consists of the RevenueDataset class. 
 
-Example screenshot:
+This class functions as an object that functions as a library that enables transform routines for datasets coming from this provider. 
 
+The class methods and attributes hold all the logic and configurations previously required to develop the existing transforms in our system.
 
-- Transform routines library: The methods hold all the logic that has been used to process the transforms required for these types of datasets. 
-
-Example screenshot:
