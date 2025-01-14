@@ -1,5 +1,6 @@
-data_raw = data as extracted.
-Data_processed = data after transform.
+Folders
+- data_raw contains the data as extracted.
+- data_processed contains the data after transform.
 
 ETL_modules
 
