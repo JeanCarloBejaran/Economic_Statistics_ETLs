@@ -7,9 +7,9 @@ The suite of datasets instantiated for this example is the Colorado Department o
     https://cdor.colorado.gov/retail-sales-reports
 
 These include Sales Reports by:
-  State (1 file)
-  County (1 file)
-  City (2 files)
-  Industry (2 files)
-  County by Industry (2 files)
-  City by Industry (2 files)
+  - State (1 file)
+  - County (1 file)
+  - City (2 files)
+  - Industry (2 files)
+  - County by Industry (2 files)
+  - City by Industry (2 files)
