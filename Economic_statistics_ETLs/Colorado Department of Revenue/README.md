@@ -10,12 +10,16 @@ This suite processes datasets provided by the **Colorado Department of Revenue**
 Data and reports are published at:  
 🔗 [cdor.colorado.gov/data-and-reports](https://cdor.colorado.gov/data-and-reports)
 
+Note: If hyperlink fails copy and paste this link into browser: https://cdor.colorado.gov/retail-sales-reports
+
 ---
 
 ## 📊 Dataset Suite
 
 The datasets used in this example are the **Colorado Department of Revenue's Sales Reports**, available at:  
 🔗 [cdor.colorado.gov/retail-sales-reports](https://cdor.colorado.gov/retail-sales-reports)
+
+Note: If hyperlink fails copy and paste this link into browser: https://cdor.colorado.gov/retail-sales-reports
 
 These include the following reports:
 
