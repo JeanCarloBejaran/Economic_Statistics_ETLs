@@ -1,6 +1,6 @@
 # 🗂️ Source Agency and Dataset Details
 
-This module processes datasets provided by the **Colorado Department of Revenue**. Below are the details of the source agency and the datasets used in this example. 🌟
+This suite processes datasets provided by the **Colorado Department of Revenue**. Below are the details of the source agency and the datasets used in this example. 🌟
 
 ---
 
